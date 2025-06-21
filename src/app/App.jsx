@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "../components/ui/Navbar";
 import Home from "../pages/Home/Home";
 import "./App.css";
@@ -8,10 +8,13 @@ import NIC from "../pages/NIC/NIC";
 function App() {
   return (
     <BrowserRouter>
-      {/* <Navbar /> */}
-      {/* <Home /> */}
-      {/* <About /> */}
-      <NIC />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/nic" element={<NIC />} />
+        {/* Add more routes as needed */}
+      </Routes>
     </BrowserRouter>
   );
 }
