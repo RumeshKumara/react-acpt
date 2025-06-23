@@ -1,6 +1,9 @@
 import React from "react";
 import Navbar from "../../components/ui/Navbar";
 import { Route, Routes } from "react-router-dom";
+import Home from "../Home/Home";
+import About from "../About/About";
+import NIC from "../NIC/NIC";
 
 function Dashboard() {
   return (

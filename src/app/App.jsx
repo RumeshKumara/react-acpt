@@ -13,7 +13,7 @@ function App() {
   const [login, setLogin] = useState(false);
 
   useEffect(() => {
-    const token = localStorage.getItem("afsd-key");
+    const token = localStorage.getItem("token");
     if (token) {
       setLogin(true);
     } else {
